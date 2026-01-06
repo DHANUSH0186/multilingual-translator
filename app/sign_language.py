@@ -36,7 +36,7 @@ class SignLanguageDetector:
     
     def start_camera(self):
         """Start real-time sign language detection"""
-        cap = cv2.VideoCapture(0)
+        cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
         print("Camera started! Press 'q' to quit.")
         
         while True:
